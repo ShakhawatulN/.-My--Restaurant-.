@@ -13,6 +13,9 @@
 
 <body>
 
+   <!-- preloader -->
+   <div id="preloader"></div>
+
    <div class="order-head">
       <img src="logo.png" class="logo">
 
@@ -113,6 +116,11 @@
       function alertBox() {
          alert('There is a problem. Please try again later')
       }
+      var loader = document.getElementById("preloader");
+   
+      window.addEventListener("load", function(){
+      loader.style.display = "none";
+      });
    </script>
 
 
